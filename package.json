@@ -3,10 +3,12 @@
   "version": "0.1.3",
   "description": "Looped carousel for React Native",
   "author": "Phil Rukin <philipp@rukin.me> (http://rukin.me)",
-  "contributors": [{
-    "name": "Sergey Pronin",
-    "email": "sergey@pronin.me"
-  }],
+  "contributors": [
+    {
+      "name": "Sergey Pronin",
+      "email": "sergey@pronin.me"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -43,5 +45,8 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
   }
 }

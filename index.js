@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   StyleSheet,
   Text,
@@ -16,22 +17,22 @@ const PAGE_CHANGE_DELAY = 4000;
 */
 export default class Carousel extends Component {
   static propTypes = {
-    children: React.PropTypes.node.isRequired,
-    autoplay: React.PropTypes.bool,
-    delay: React.PropTypes.number,
-    currentPage: React.PropTypes.number,
+    children: PropTypes.node.isRequired,
+    autoplay: PropTypes.bool,
+    delay: PropTypes.number,
+    currentPage: PropTypes.number,
     style: View.propTypes.style,
     pageStyle: View.propTypes.style,
     contentContainerStyle: View.propTypes.style,
-    pageInfo: React.PropTypes.bool,
-    pageInfoBackgroundColor: React.PropTypes.string,
+    pageInfo: PropTypes.bool,
+    pageInfoBackgroundColor: PropTypes.string,
     pageInfoTextStyle: Text.propTypes.style,
-    pageInfoTextSeparator: React.PropTypes.string,
-    bullets: React.PropTypes.bool,
+    pageInfoTextSeparator: PropTypes.string,
+    bullets: PropTypes.bool,
     bulletsContainerStyle: Text.propTypes.style,
     bulletStyle: Text.propTypes.style,
     chosenBulletStyle: Text.propTypes.style,
-    onAnimateNextPage: React.PropTypes.func,
+    onAnimateNextPage: PropTypes.func,
   };
 
   static defaultProps = {
